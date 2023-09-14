@@ -11,12 +11,10 @@ The class `LogsJournal` is responsible for both managing the logs and saving the
 import fs from "fs";
 
 class LogsJournal {
-  _entries: Array<string>;
-  _count: number;
+  private _entries: Array<string>;
 
   constructor() {
     this._entries = [];
-    this._count = 0;
   }
 
   addMessage(message: string): number {
@@ -34,7 +32,7 @@ class LogsJournal {
     return Object.values(this._entries).join("\n");
   }
 
-  save(filename: string) {
+  saveToFileSystem(filename: string) {
     fs.writeFileSync(filename, this.toString());
   }
 

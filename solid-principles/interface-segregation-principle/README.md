@@ -1,43 +1,44 @@
-## I - Interface segregation principle (ISD)
+## I - Interface segregation principle (ISP)
 
-> The Interface Segregation Principle (ISP) states that no client should be forced to depend on interfaces it does not use. This means it's better to have several specific interfaces rather than one do-it-all interface.
+> The Interface Segregation Principle (ISP) asserts that a client should not be forced to implement interfaces it doesn't use. Instead of one monolithic interface, it's preferable to have multiple, specific interfaces tailored to the client's needs.
 
 ### Bad Approach
 
 In this approach, there's a single, large interface forcing implementations to have methods that might not be relevant to them.
 
 ```typescript
+class TextDocument {}
 interface Printer {
-  print(document: string): void;
-  scan(document: string): void;
-  fax(document: string): void;
+  print(document: TextDocument): void;
+  scan(document: TextDocument): void;
+  fax(document: TextDocument): void;
 }
 
 class ModernPrinter implements Printer {
-  print(document: string): void {
+  print(document: TextDocument): void {
     console.log(`Printing document: ${document}`);
   }
 
-  scan(document: string): void {
+  scan(document: TextDocument): void {
     console.log(`Scanning document: ${document}`);
   }
 
-  fax(document: string): void {
+  fax(document: TextDocument): void {
     console.log(`Faxing document: ${document}`);
   }
 }
 
 class OldPrinter implements Printer {
-  print(document: string): void {
+  print(document: TextDocument): void {
     console.log(`Printing document: ${document}`);
   }
 
   // Old printers might not support these functionalities
-  scan(document: string): void {
+  scan(document: TextDocument): void {
     throw new Error("Function not supported.");
   }
 
-  fax(document: string): void {
+  fax(document: TextDocument): void {
     throw new Error("Function not supported.");
   }
 }

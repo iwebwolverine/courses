@@ -1,7 +1,9 @@
 ## D - Dependency Inversion Principle (DIP)
 
-> - High-level modules should not depend on low-level modules. Both should depend on abstractions.
-> - Abstractions should not depend on details. Details should depend on abstractions.
+> The Dependency Inversion Principle emphasizes the importance of decoupling in software architecture. By relying on abstractions, not specific implementations, we can create systems that are more modular, flexible, and adaptive to change.
+
+- High-level modules should not depend on low-level modules. Both should depend on abstractions.
+- Abstractions should not depend on details. Details should depend on abstractions.
 
 ### Bad Approach
 

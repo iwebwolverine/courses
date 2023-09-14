@@ -2,6 +2,7 @@
 
 > - Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
 > - This means that the behavior of a module can be extended without modifying its source code. This is typically achieved using interfaces or abstract classes where new functionality can be added by creating new subclasses or implementing interfaces, without altering existing code.
+> - OCP one of the most important principles in object-oriented design due to its profound impact on system maintainability.
 
 ### Bad Approach
 
@@ -43,7 +44,11 @@ class Order {
 
 ### Good Approach
 
-The code is open for extension but closed for modification. If you need to add a new discount strategy in the future, you can simply create a new class that implements the DiscountStrategy interface. The existing code won't need any modification.
+The code is open for extension but closed for modification. If you need to add a new discount strategy in the future, you can simply create a new class that implements the `DiscountStrategy` interface. The existing code won't need any modification.
+
+- Code separates concerns and delegates the responsibility of calculating the discounted amount to specific implementations of the `DiscountStrategy` interface.
+- Consider adding that with this approach, each discount strategy is also more testable in isolation. This aids in ensuring that each type of discount works as expected.
+- The `Order` class is now also more cohesive—it only cares about processing the order without concerning itself with the specifics of the discount logic.
 
 ```typescript
 interface DiscountStrategy {

@@ -5,7 +5,8 @@
 
 ### Bad Approach
 
-If you replace a `BankAccount` object, in this example, with a `FixedDepositAccount` object, the `processAccount` function will break due to the overridden withdraw method.
+- The `FixedDepositAccount` subclass has not the same behavior (withdraw method) that expected from the superclass `BankAccount`.
+- If you replace a `BankAccount` object, in this example, with a `FixedDepositAccount` object, the `processAccount` function will break due to the overridden withdraw method.
 
 ```typescript
 class BankAccount {
@@ -68,7 +69,11 @@ class FixedDepositAccount implements Depositable {
 }
 
 function processAccount(account: Withdrawable, amount: number) {
-  account.withdraw(amount);
+  account.withdraw(amount); // Here we will not get any errors because account param implements Withdrawable interface and will have a withdraw method.
   // ... some other operations
 }
 ```
+
+### Notes
+
+Fixed deposit accounts, also known as term deposits or time deposits in some regions, are special types of bank accounts designed to hold a certain amount of money for a fixed period of time. They don't typically allow withdrawals before the end of this period
