@@ -1,11 +1,3 @@
-# SOLID Principles :
-
-- [Single Responsibility Principle (SRP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/single-responsibility-principle)
-- [Open closed Principle (OCP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/open-closed-principle)
-- [Liskov substitution Principle (LSP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/liskov-substitution-principle)
-- [Dependency Inversion Principle (DIP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/dependency-inversion-principle)
-- [Interface Segregation Principle (ISP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/interface-segregation-principle)
-
 # Patterns Typescript
 
 - [Adapter Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Adapter)
