@@ -1,4 +1,4 @@
-# SOLID Principles :
+# SOLID Principles
 
 - [Single Responsibility Principle (SRP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/single-responsibility-principle)
 - [Open closed Principle (OCP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/open-closed-principle)
@@ -28,3 +28,7 @@
 - [Strategy Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Strategy)
 - [Template Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Template)
 - [Visitor Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Visitor)
+
+### License
+
+[AGPL](http://www.gnu.org/licenses/agpl-3.0-standalone.html)
