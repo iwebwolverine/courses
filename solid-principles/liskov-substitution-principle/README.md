@@ -1,6 +1,6 @@
 # L - Liskov Substitution Principle (LSP)
 
-> Subclasses should extend the behavior of the parent class but not change the base code by something different.
+> Subclasses should extend the behavior of the parent class but not change the base code by something different. It's possible to change
 > If you follow this principle you will be able to replace a parent class by any of its subclasses without breaking the client code.
 
 ### Bad Approach
