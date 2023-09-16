@@ -9,7 +9,7 @@ The Builder Pattern is a creational design pattern used to construct a complex o
 - It's helpful when you need to ensure a specific sequence of operations to create an object.
 - Provides an abstraction allowing you to hide the internal structure and construction process of complex objects from the client.
 
-## Example
+## Examples
 
 ```typescript
 const pdfBuilder = new PDFDocumentBuilder();
@@ -24,4 +24,12 @@ const document = pdfBuilder
 const writer = new PDFWriter({ folder: "/path/to/output" });
 
 writer.write(document, "BuilderExample");
+```
+
+```javascript
+const codeBuilder = new CodeBuilder("User");
+
+const code = pdfBuilder.addField("name").addField("age").build();
+
+console.log(code);
 ```

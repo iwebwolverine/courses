@@ -1,6 +1,6 @@
 ## S - Single Responsibility Principle (SRP)
 
-> - A class should have only one reason to change.
+> - Every class, module, or function in a program should have one responsibility/purpose in a program
 > - This principle asserts that a class or module should do only one job. If a class has more than one responsibility, it becomes coupled, making changes in one responsibility potentially affect the other. By keeping each class to a single responsibility, the software becomes more modular and changes are isolated, reducing the risk of unintended consequences.
 
 ### Bad Approach
