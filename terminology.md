@@ -10,7 +10,6 @@
     </li>
     <li>
         ```typescript
-            // Определение DTO для пользователя
             class UserDTO {
                 firstName: string;
                 lastName: string;
