@@ -33,8 +33,7 @@
                         email: "john.doe@example.com"
                     };
 
-                    const userDTO = createUserDTO(rawData);
-                ```
+                    const userDTO = createUserDTO(rawData);```
             </li>
 
         </ul>
