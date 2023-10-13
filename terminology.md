@@ -35,9 +35,7 @@
     };
 
     const userDTO = createUserDTO(rawData);
-
 ``
-
             </li>
         </ul>
     </div>
