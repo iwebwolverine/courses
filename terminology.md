@@ -7,9 +7,8 @@
     </li>
     <li>
         Пример DTO на TypeScript:
-    </li>
-    <li>
-        ```
+
+          ```
             class UserDTO {
                 firstName: string;
                 lastName: string;
