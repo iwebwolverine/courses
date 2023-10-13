@@ -9,7 +9,7 @@
         Пример DTO на TypeScript:
     </li>
     <li>
-        ```typescript
+        ```
             class UserDTO {
                 firstName: string;
                 lastName: string;
