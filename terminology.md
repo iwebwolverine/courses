@@ -7,7 +7,8 @@
             </li>
             <li>
                 Пример DTO на TypeScript:
-
+            </li>
+            <li>
                 ```typescript
                     class UserDTO {
                         firstName: string;
@@ -33,9 +34,9 @@
                         email: "john.doe@example.com"
                     };
 
-                    const userDTO = createUserDTO(rawData);```
+                    const userDTO = createUserDTO(rawData);
+                ```
             </li>
-
         </ul>
     </div>
 
