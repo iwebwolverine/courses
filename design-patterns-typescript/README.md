@@ -1,12 +1,4 @@
-## SOLID Principles
-
-- [Single Responsibility Principle (SRP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/single-responsibility-principle)
-- [Open closed Principle (OCP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/open-closed-principle)
-- [Liskov substitution Principle (LSP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/liskov-substitution-principle)
-- [Interface Segregation Principle (ISP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/interface-segregation-principle)
-- [Dependency Inversion Principle (DIP)](https://github.com/iwebwolverine/courses/tree/main/solid-principles/dependency-inversion-principle)
-
-## Patterns Typescript
+# Patterns Typescript
 
 - [Adapter Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Adapter)
 - [Bridge Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Bridge)
@@ -28,7 +20,3 @@
 - [Strategy Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Strategy)
 - [Template Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Template)
 - [Visitor Pattern](https://github.com/iwebwolverine/courses/tree/main/design-patterns-typescript/Visitor)
-
-### License
-
-[AGPL](http://www.gnu.org/licenses/agpl-3.0-standalone.html)
