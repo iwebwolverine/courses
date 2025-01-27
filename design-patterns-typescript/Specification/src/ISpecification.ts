@@ -1,9 +1,7 @@
 interface ISpecification<T> {
-    isSatisfiedBy(candidate: T): boolean
+  isSatisfiedBy(candidate: T): boolean;
 
-    and(specification: ISpecification<T>): ISpecification<T>
+  and(specification: ISpecification<T>): ISpecification<T>;
 }
 
-export {
-    ISpecification,
-}
+export { ISpecification };

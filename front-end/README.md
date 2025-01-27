@@ -1,1 +1,0 @@
-- [TanStack](https://github.com/TanStack/query) - Hooks for fetching, caching and updating asynchronous data in React, Solid, Svelte and Vue
