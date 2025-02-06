@@ -93,3 +93,99 @@ const enhancedButton = withLogging(withValidation(button));
 
 enhancedButton.render();
 ```
+
+### Javascript example
+
+```javascript
+class SingleValue extends Number {
+  constructor(value) {
+    super(value);
+  }
+
+  // Custom iterator to treat SingleValue as an iterable with one element
+  [Symbol.iterator]() {
+    let isDone = false;
+    return {
+      next: () => {
+        if (isDone) return { done: true };
+        isDone = true;
+        return { value: Number(this), done: false }; // Explicitly convert to number
+      },
+    };
+  }
+}
+
+class ManyValues extends Array {
+  constructor() {
+    super();
+  }
+}
+
+// Function to sum all values in containers
+const sum = (containers) => {
+  let total = 0;
+
+  for (const container of containers) {
+    for (const element of container) {
+      total += Number(element); // Ensure proper addition for SingleValue
+    }
+  }
+
+  return total;
+};
+
+// Example usage
+let singleValue = new SingleValue(11);
+let otherValues = new ManyValues();
+otherValues.push(22);
+otherValues.push(33);
+otherValues.push(new SingleValue(22)); // Add SingleValue inside ManyValues
+
+console.log(sum([singleValue, otherValues])); // Output: 88
+```
+
+### Folder structure example
+
+```javascript
+interface FileSystemComponent {
+    display(indent: string): void;
+}
+
+class File implements FileSystemComponent {
+    constructor(private name: string) {}
+
+    display(indent: string) {
+        console.log(`${indent}File: ${this.name}`);
+    }
+}
+
+class Directory implements FileSystemComponent {
+    private children: FileSystemComponent[] = [];
+
+    constructor(private name: string) {}
+
+    add(child: FileSystemComponent) {
+        this.children.push(child);
+    }
+
+    display(indent: string) {
+        console.log(`${indent}Directory: ${this.name}`);
+        for (const child of this.children) {
+            child.display(indent + '  ');
+        }
+    }
+}
+
+// Usage
+const root = new Directory('root');
+const file1 = new File('file1.txt');
+const file2 = new File('file2.txt');
+const subDir = new Directory('subdir');
+
+subDir.add(new File('file3.txt'));
+root.add(file1);
+root.add(file2);
+root.add(subDir);
+
+root.display('');
+```
